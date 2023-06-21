@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>SIP project team-7</title>
+    <style>
+        *{
+            padding: 0;
+           margin: 0;
+        }
+        sub{
+            font-size: 2vh;
+            color: rgb(90, 190, 90);
+
+        }
+        p{
+            font-weight: 500;
+        }
+        h1{
+            color: rgb(90, 190, 90);
+            margin-left:40px;
+            font-size: 4vh;
+            text-transform: capitalize;
+            font-weight: 500;
+            /* text-decoration: underline; */
+        }
+        h2{
+            color: rgb(90, 190, 90);
+           
+            font-size: 5vh;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        h3{
+            color: rgb(90, 190, 90);
+            font-weight: 500;
+            text-decoration: underline;
+
+        }
+        h4{
+            color: rgb(90, 190, 90);
+           
+            font-size: 3vh;
+            font-weight: 500;
+            /* text-decoration: underline; */
+        }
+        container{
+                display: flex;
+                justify-content:space-between;
+              
+
+      }
+    
+      .img1{
+          border:3px solid rgb(90, 190, 90);
+      }
+      .img2{
+          border:3px solid rgb(90, 190, 90);
+      }
+      .img3{
+          border:3px solid rgb(90, 190, 90);
+      }
+      footer{
+          background-color: rgb(90, 190, 90);
+          text-align : center;
+          padding:5vh;
+          height: 18vh;
+       
+      }
+      .register{
+        color: black;
+           
+           font-size: 3vh;
+           font-weight: 500;
+           text-decoration: underline;
+      }
+      .register1{
+        color: black;
+           
+           font-size: 5vh;
+           font-weight: 500;
+           text-decoration: underline;
+      }
+      .blinking{
+    animation:blinkingText 2.0s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: black;}
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: black;;    }
+}
+    </style>
+
+</head>
+<body id="Home">
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">QESC<sub>(An innnovative model for quick life saving escape from harmful industrial leakages)</sub></sub></span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="#Home">Home</a>
+            <a class="mr-5 hover:text-gray-900" href="#ABOUT">About us</a>
+            <a class="mr-5 hover:text-gray-900" href="#Contact Us">Contact us</a>
+            <!-- <a class="mr-5 hover:text-gray-900" href="#">Updates</a> -->
+          </nav>
+          <!-- <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button> -->
+        </div>
+      </header>
+      <h1>Get Alerted and Plan for Escape and Rescue Yourself</h1>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+          <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+            <h1>Fill the details in order to receive the alert 
+                during a harmful gas leak from your neighbouring industries </h1>
+            <p class="leading-relaxed mt-4">This alreting system works with 
+                the help of GSM-module connected to a server so that when gas leaks,all the neighbours who got registered gets notified</p>
+          </div>
+          <!-- <form action="" method="post">
+          <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+            <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+            <div class="relative mb-4">
+              <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+              <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+                <label for="mobile-number" class="leading-7 text-sm text-gray-600">Mobile-Number</label>
+                <input type="mobile-number" id="mobile-number" name="mobile-number" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            <button class="text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Register</button>
+            </form> --> 
+
+            <div class="register1">
+            <P>CLICK ON LOGO TO REGISTER</P>
+              <a href="https://forms.gle/ZUFknfbHC5kqDcm58" target="_self"><img src="https://cdn.freelogodesign.org/files/6b66f1463e8f443eb0e79a148c82d8b1/thumb/logo_200x200.png?v=0" alt="LOGO"/></a>
+            </div>
+            <!-- <div style="color:rgb(90, 190, 90); background-color:grey; padding:10px;">
+            <form action="project1.php" method="post">
+            <table border="1" align:"center">
+
+                <tr>
+                    <td><label>full_name</label></td>
+                    <td><input type="text" name="full_name"></td>
+                </tr>
+                <tr>
+                    <td><label>email</label></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label>mobile-number</label></td>
+                    <td><input type="phone" name="mobile-number"></td>
+                </tr>
+                <tr>
+          <td colspan="2" align:"center" ><input type="submit" name="register" value="register" style="font-size: 15px;"></td>
+                    
+                </tr>
+                
+            </table>
+            </form>
+        </div> -->
+            <p class="text-xs text-gray-500 mt-3" style="text-align:right">Get Alreting Notification by Just Filling Your Details</p>
+          </div>
+        </div>
+      </section>
+      <h2 id="ABOUT">ABOUT</h2>
+      <section>
+          </br>
+        <container>
+        <div class="img1">
+            <img src="https://imgs.search.brave.com/K5v4MdHc01rrCu7LGfCSWdcTsjUK4P_IOQdp1sC-E6c/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC51/enZnWUJCUGFWeFdr/MVdmMG1FRjBnSGFF/OCZwaWQ9QXBp" alt="Industrial-image"/>
+        </div>
+        <div class="img2">
+            <img src="https://imgs.search.brave.com/phIvcKoYcZiwaVHVNFvou2bhuFkEX7kyRdeCXz5l_lU/rs:fit:1123:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC43/V2RyWlNiTHk1Y21i/UnFzalZWNklRSGFE/SSZwaWQ9QXBp" alt="Industrial-image"/>
+        </div>
+        <div class="img3">
+            <img src="https://imgs.search.brave.com/H3Fgsb6J0Ts9uEtZY4OEFwOxOEWJZt8komZapF6SwPI/rs:fit:739:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5T/N1EyMjl4bi1icDU4/RGdZeTZHQldRSGFF/dyZwaWQ9QXBp" alt="Industrial-image"/>
+        </div>
+    </container>
+      </section>
+      <section>
+     <p></br>
+        <b>QESC</b> refers to "quick escape" is an innovative stratergy which deals with the detection and alerting system
+        during any type of industrial leakages which are harmful to the human survival.</br></br>
+    </p>
+    <h3>
+        Need of QESC in society:
+    </br>
+    </h3> 
+    <p>Many industries store harmful chemicals , works using harmful gases . The leakage of such chemicals from the work place leads to death of many people.
+        <br/>Not only workers ,  the people living around the industries also gets affected due to this type of accidents.
+        
+        <br/>So it is very important to alert the people surrounded the industry along with workers  during any chemical leakage / gas leakage.
+        
+        <br/>But a sufficient mechanism is  not present to alert the people , some incidents like Bhopal gas tragedy , vizag lg polymers incident are best examples for this.
+        
+        <br/>  If this type of system exists during vizag LG polymers chemical leakage , it helps to save lives of many innocents.
+        
+        <br/> Our aim is to alert the people around industries during this type of incidents.
+        <br/>Just alarms and sirens used by the industries with a range from 2-4km is not enough to alert all the neighbouring people
+        </p>
+        <h3></br>
+          Solution Provided by QESC:
+          
+        </br>
+        </h3>
+        <p>
+            Our solution is to use catalytic sensor with Arduino so that both liquid and gas leak detection is easy.
+
+</br>Instead of alarms ,This application is used that alerts the users near the industries , factories etc when an chemical leakage / any fire accident occurs in working places like industries.
+
+</br>These application also sends the alert to the rescue teams ,  so that the rescue teams can reach the spot in time and control the damage.
+
+</br>This web application need to be pre registered by the people who lives in the surroundings of the Industry and needed to be alerted immediately after the harmful gas leak.
+
+</br>This application can also used in any work places like offices , college , to alert the rescue teams when there is any accident in work place. 
+ </br>
+        </p>
+</section>
+</br>
+<h2 id="Contact Us">Contact Us:</h2>
+<!-- <section class="text-gray-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">For any queries or tips or comments contact our team by filling the below boxes with your details</p>
+      </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+              <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+              <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Contact</button>
+          </div>
+          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+
+            <a class="text-green-500">sipteam07@gmail.com</a>
+        
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <div class="contact">
+    <h4>For any queries or doubts you can contact us by mobile or through mail:</h4>
+       <p>MOBILE:+916304167236</p>
+       <p>Mail: <a class="text-green-500">sipteam07@gmail.com</a></p>
+       <h4>For any suggestions or commments click on below link and fill the form:</h4>
+       <a class="register" href="https://forms.gle/WYNLP4tNgjq3cPku8">CONTACT HERE!</p>
+  </div>
+<footer>
+    <p>copyrights are reserved to &copySIP-Team-07</p>
+    &nbsp;
+    <p class="blinking">THANK YOU FOR VISITING!</p>
+</footer>
+</body>
+</html>
